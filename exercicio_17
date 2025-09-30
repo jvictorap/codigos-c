@@ -1,0 +1,36 @@
+# include <stdio.h>
+
+
+float comp(float r){
+	float res;
+	res = 2 * 2.14 * r;
+	
+	return res;
+}
+
+float area(float r){
+	float res;
+	res = 3.14 * r * r;
+	
+	return res;
+}
+
+float vol(float r){
+	float res;
+	res = (3*3.14*r*r)/4;
+	
+	return res;
+}
+void main(){
+	float c, a, v, r;
+	 
+	printf("Informe o raio: ");
+	scanf("%f", &r);
+	
+	c = comp(r);
+	a = area(r);
+	v = vol(r);
+	
+	printf("\nComprimento: %.2fcm\nArea: %.2fcm\nVolume: %.2fcm.", c, a, v);
+
+}
